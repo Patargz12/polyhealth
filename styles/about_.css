@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-menu li a{
+    color: rgb(3, 2, 2);
+    display: inline-block;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: fixed!important;
+    top: 10px!important;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 97%;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-image: linear-gradient(100deg, #eee5e5, #ffffff)!important;
+    
+    box-shadow: 0 1px 8px #000000;
+}
+
+.nav-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 1.2em;
+    color: black!important;
+}
+
+.nav-menu .nav-item{
+    color: black;
+}
+
+.nav-branding{
+    padding-left: 30px;
+    font-size: 2rem;
+}
+
+.nav-link{
+    font-weight: 700;
+    transition: 0.7 ease;
+    color: black;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(0, 0, 0);
+}
+
+@media(max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    .pimg3{
+        height: 700px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 125px;
+        gap: 0;
+        flex-direction: column;
+        background-image: linear-gradient(100deg, #eee5e5, #ffffff)!important;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 50px;
+        box-shadow: 0 1px 8px #000000;
+        
+    }
+
+    .nav-link{
+        text-align: center!important;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+.story img{
+    border-radius: 50%;
+}
+
+.board img{
+    border-radius: 50%;
+}
+
+img{
+    text-align: center;
+}
+
+.pimg1{
+    z-index: -2;
+    background-image: url('../Media/ab_par1.jpg');
+    min-height: 600px;
+}
+
+.pimg1 h1{
+    position: relative;
+    top: 280px;
+    z-index: 10000!important;
+    font-size: 60px;
+    opacity: 1!important;
+    color: black;
+}
+
+.pimg2{
+    background-image: url('../Media/par_ceo.jpg');
+    min-height: 200px;
+}
+
+.pimg4{
+    background-image: url('../Media/par1.jpg');
+    min-height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+}
+
+.pimg4 img{
+    position: relative;
+    height: 50%;
+    width: 70%;
+    border-radius: 30px;
+}
+
+.pimg1, .pimg2, .pimg3{ 
+    
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+    
+}
+
+
+.section h1{
+    padding-top: 1em;
+    padding-bottom: 0.4em;
+}
+
+.section-light{
+    background-color:#f4f4f4;
+    color: #666;
+}
+
+.pimg2 img{
+    border-radius: 50%;
+}
+
+.pimg2 h1{
+    color: white;
+    font-weight: 2rem;
+}
+
+.section-dark{
+    background-color:#282e32;
+    color: #ddd;
+}
+
+
+
+.docs_img img{
+    border-radius: 50%;
+}
+
+footer{
+    position: relative;
+    background-image: linear-gradient(100deg, #eee5e5, #ffffff)!important;
+    color: #666;
+    color: #ddd;
+    box-shadow: 0 5px 20px #000000;
+    text-align: center;
+    padding: 30px;
+    bottom: 0px;
+}
+
+.footer_txt{
+    font-size:small;
+    color: rgb(0, 0, 0);
+    align-items: right;
+}
+
+.footer_txt_left{
+    font-size:small;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.footer_mid{
+    position:relative;
+    left: 150px;
+}
